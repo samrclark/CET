@@ -1,0 +1,37 @@
+Users
+
+Class Registration
+     Courses
+        name
+        description
+        content ids (many to many)
+        date/time
+        length
+        instructor
+        students (many to many, users)
+
+    Content IDs?
+        name (content module id)
+        description
+        
+
+CET tracking
+    Credit
+        course name
+        description
+        course link (optional url to course info)
+        date/time
+        length
+        creditees (many to many, users through credit_award)
+        content_ids (many to many, content_id)        
+
+    credit_award
+        creditee (Users)
+        awarded_time
+        
+    Content_id
+        name (content module id)
+        description
+        medicare (boolean)
+        content_length    
+
